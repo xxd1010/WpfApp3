@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="WpfApp3.Create.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp3.Create"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="200">
+    <Grid>
+        <TextBlock x:Name="textBlockNum" HorizontalAlignment="Left" Margin="5,5,0,0" TextWrapping="Wrap" Text="Num" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockName" HorizontalAlignment="Left" Margin="65,5,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="130"/>
+        <TextBlock x:Name="textBlockType" HorizontalAlignment="Left" Margin="5,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"><Run Text="Ty"/><Run Text="pe"/></TextBlock>
+        <Button x:Name="buttonGain" Content="Button" HorizontalAlignment="Left" Margin="120,26,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</UserControl>
