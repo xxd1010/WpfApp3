@@ -10,7 +10,7 @@ namespace WpfApp3
     {
         public MainWindow()
         {
-            //Thread thread = new Thread();
+            Thread thread = new Thread();
 
 
             InitializeComponent();
