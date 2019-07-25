@@ -11,15 +11,8 @@ namespace WpfApp3
     {
         public MainWindow()
         {
-            money();
-
 
             InitializeComponent();
-        }
-
-        public void money()
-        {
-            moneyLable.Content = "$adfafhaagfg";
         }
 
 
