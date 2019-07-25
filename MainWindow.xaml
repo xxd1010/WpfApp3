@@ -45,8 +45,8 @@
             </Grid>
         </Grid>
         <Label x:Name="usrLable" Content="Usr" HorizontalAlignment="Left" Height="26" Width="100" Margin="0,-60,0,0" VerticalAlignment="Top" Background="Gray" />
-        <Label x:Name="moneyLable" Content="" HorizontalAlignment="Left" Height="26" Width="100" Margin="5,-60,0,0" VerticalAlignment="Top" Background="Gray" Grid.Column="1" TextInput="MoneyLable_TextInput" />
-        <TextBlock x:Name="moneyTextBlock" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="85" Margin="110,-60,0,0" TextWrapping="NoWrap" Background="Gray" />
+        <Label x:Name="moneyLable" HorizontalAlignment="Left" Height="26" Width="100" Margin="5,-60,0,0" VerticalAlignment="Top" Background="Gray" Grid.Column="1"  />
+        <TextBlock x:Name="moneyTextBlock" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="85" Margin="110,-60,0,0" TextWrapping="NoWrap" Background="Gray" Text="$1234565" />
 
 
     </Grid>

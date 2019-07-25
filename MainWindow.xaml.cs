@@ -11,10 +11,15 @@ namespace WpfApp3
     {
         public MainWindow()
         {
-            Thread thread = new Thread();
+            money();
 
 
             InitializeComponent();
+        }
+
+        public void money()
+        {
+            moneyLable.Content = "$adfafhaagfg";
         }
 
 
@@ -34,9 +39,6 @@ namespace WpfApp3
 
         }
 
-        private void MoneyLable_TextInput(object sender, TextCompositionEventArgs e)
-        {
-            this.moneyLable.Content = "46418964";
-        }
+
     }
 }
