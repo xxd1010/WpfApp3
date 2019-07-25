@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp3
+namespace WpfApp3.Create
 {
     /// <summary>
-    /// UserControl1.xaml 的交互逻辑
+    /// vss.xaml 的交互逻辑
     /// </summary>
-    public partial class UserControl1 : UserControl
+    public partial class vss : UserControl
     {
-        public UserControl1()
+        public vss()
         {
             InitializeComponent();
         }
