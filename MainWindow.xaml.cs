@@ -13,7 +13,30 @@ namespace WpfApp3
         {
             //Create.ControlsHide controlsHide = new Create.ControlsHide();
             //controlsHide.Show();
+            MainWindowColorChange();
             InitializeComponent();
+        }
+
+
+        public void MainWindowColorChange()
+        {
+            //MainwinDows所有button的颜色;
+
+
+
+            //MainWindow所有Grid的颜色
+            
+
+
+
+            cropGrid.Background = cropbutton.Background;
+            fishGrid.Background = fishbutton.Background;
+            shopGrid.Background = shopbutton.Background;
+
+
+
+
+
         }
 
 
@@ -40,6 +63,19 @@ namespace WpfApp3
 
         }
 
+        private void Croptxt_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            croptxt.Text = "THIS IS CROP TXT AREA";
+        }
 
+        private void Fishtxt_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            fishtxt.Text = "THIS IS FISH";
+        }
+
+        private void Shoptxt_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            shoptxt.Text = "this is SHOP";
+        }
     }
 }
