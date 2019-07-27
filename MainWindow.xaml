@@ -17,20 +17,20 @@
         <Button x:Name="fishbutton" Content="Fish" HorizontalAlignment="Left" Margin="0,105,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="Fishbutton_Click" Background="BlueViolet" BorderBrush="{x:Null}" />
         <Button x:Name="shopbutton" Content="Shop" HorizontalAlignment="Left" Margin="0,140,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="Shopbutton_Click" Background="White" BorderBrush="{x:Null}" />
         <Grid Grid.Column="1" HorizontalAlignment="Left" Width="684" Height="385" VerticalAlignment="Top">
-            <Grid x:Name="cropGrid" Visibility="Visible">
+            <Grid x:Name="cropGrid" Visibility="Hidden">
                 <TabControl  HorizontalAlignment="Left" Height="355" VerticalAlignment="Top" Width="684" Margin="0,30,0,0" Background="LightBlue" >
                     <TabItem x:Name="item1Tab" Header="TabItem" Height="20" Width="60">
                         <Grid Background = "Gray" Height="auto" Width="auto" Margin="0,0,0,40">
-                            <TextBox HorizontalAlignment = "Left" Height="278" Margin="430,5,0,5" TextWrapping="Wrap" Text="InfoTxt" VerticalAlignment="Top" Width="238" Background="#FFC0FFFF" />
+                            <TextBox HorizontalAlignment = "Left" Height="278" Margin="430,5,0,5" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" Background="#FFC0FFFF" Text="Crop" />
                         </Grid>
                     </TabItem>
                 </TabControl>
             </Grid>
-            <Grid x:Name="fishGrid" Visibility="Hidden" >
-                <TabControl  HorizontalAlignment="Left" Height="410" VerticalAlignment="Top" Width="684" Margin="0,20,0,-45.2">
+            <Grid x:Name="fishGrid" Visibility="Visible" >
+                <TabControl  HorizontalAlignment="Left" Height="340" VerticalAlignment="Top" Width="684" Margin="0,20,0,0">
                     <TabItem x:Name="item2Tab" Header="TabItem" Height="20" Width="60" Visibility="Visible">
-                        <Grid Background = "White" Height="auto" Width="auto">
-                            <TextBox HorizontalAlignment = "Left" Height="382" Margin="440,0,0,0" TextWrapping="Wrap" Text="InfoTxt" VerticalAlignment="Top" Width="238" Background="#FFC0FFFF" />
+                        <Grid Background = "White" Height="auto" Width="auto" Margin="0,0,0,0">
+                            <TextBox HorizontalAlignment = "Left" Height="303" Margin="440,0,0,0" TextWrapping="Wrap" Text="Fish" VerticalAlignment="Top" Width="238" Background="#FFC0FFFF" />
                         </Grid>
                     </TabItem>
                 </TabControl>

@@ -11,26 +11,32 @@ namespace WpfApp3
     {
         public MainWindow()
         {
-            Create.ControlsHide controlsHide = new Create.ControlsHide();
-            controlsHide.Show();
+            //Create.ControlsHide controlsHide = new Create.ControlsHide();
+            //controlsHide.Show();
             InitializeComponent();
         }
 
 
         private void Cropbutton_Click(object sender, RoutedEventArgs e)
         {
-
-            
+            cropGrid.Visibility = Visibility.Visible;
+            fishGrid.Visibility = Visibility.Collapsed;
+            shopGrid.Visibility = Visibility.Collapsed;
 
         }
 
         private void Fishbutton_Click(object sender, RoutedEventArgs e)
         {
-
+            cropGrid.Visibility = Visibility.Collapsed;
+            fishGrid.Visibility = Visibility.Visible;
+            shopGrid.Visibility = Visibility.Collapsed;
         }
 
         private void Shopbutton_Click(object sender, RoutedEventArgs e)
         {
+            cropGrid.Visibility = Visibility.Collapsed;
+            fishGrid.Visibility = Visibility.Collapsed;
+            shopGrid.Visibility = Visibility.Visible;
 
         }
 

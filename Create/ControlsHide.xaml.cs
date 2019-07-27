@@ -26,14 +26,18 @@ namespace WpfApp3.Create
 
         private void Hide_Click(object sender, RoutedEventArgs e)
         {
-            ControlsHide controlsHide = new ControlsHide();
-            controlsHide.IsEnabled = true;
+            blueGrid.Visibility = Visibility.Collapsed;
         }
 
         private void Show_Click(object sender, RoutedEventArgs e)
         {
-            ControlsHide controlsHide = new ControlsHide();
-            controlsHide.IsEnabled = false;
+            //ControlsHide controlsHide = new ControlsHide();
+            //controlsHide.IsEnabled = false;
+            blueGrid.Visibility = Visibility.Visible;
         }
+
+        
+
+
     }
 }
