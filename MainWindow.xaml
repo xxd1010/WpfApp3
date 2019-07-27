@@ -7,7 +7,7 @@
         xmlns:Create="clr-namespace:WpfApp3.Create" x:Class="WpfApp3.MainWindow"
         mc:Ignorable="d"
         Title="Helper" Width="800" Height="500" MaxWidth="800" MaxHeight="500" MinWidth="800" MinHeight="500">
-    <Grid Margin="0,80,0,0">
+    <Grid Margin="0,60,0,0">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
@@ -17,17 +17,17 @@
         <Button x:Name="fishbutton" Content="Fish" HorizontalAlignment="Left" Margin="0,105,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="Fishbutton_Click" Background="BlueViolet" BorderBrush="{x:Null}" />
         <Button x:Name="shopbutton" Content="Shop" HorizontalAlignment="Left" Margin="0,140,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="Shopbutton_Click" Background="White" BorderBrush="{x:Null}" />
         <Grid Grid.Column="1" HorizontalAlignment="Left" Width="684" Height="385" VerticalAlignment="Top">
-            <Grid x:Name="cropGrid">
-                <TabControl  HorizontalAlignment="Left" Height="375" VerticalAlignment="Top" Width="684" Margin="0,30,0,-20.2" >
+            <Grid x:Name="cropGrid" Visibility="Visible">
+                <TabControl  HorizontalAlignment="Left" Height="355" VerticalAlignment="Top" Width="684" Margin="0,30,0,0" Background="LightBlue" >
                     <TabItem x:Name="item1Tab" Header="TabItem" Height="20" Width="60">
-                        <Grid Background = "White" Height="auto" Width="auto" Margin="0,0,0,40">
-                            <TextBox HorizontalAlignment = "Left" Height="320" Margin="440,0,0,0" TextWrapping="Wrap" Text="InfoTxt" VerticalAlignment="Top" Width="238" Background="#FFC0FFFF" />
+                        <Grid Background = "Gray" Height="auto" Width="auto" Margin="0,0,0,40">
+                            <TextBox HorizontalAlignment = "Left" Height="278" Margin="430,5,0,5" TextWrapping="Wrap" Text="InfoTxt" VerticalAlignment="Top" Width="238" Background="#FFC0FFFF" />
                         </Grid>
                     </TabItem>
                 </TabControl>
             </Grid>
-            <Grid x:Name="fishGrid">
-                <TabControl  HorizontalAlignment="Left" Height="410" VerticalAlignment="Top" Width="684" Visibility="Hidden">
+            <Grid x:Name="fishGrid" Visibility="Hidden" >
+                <TabControl  HorizontalAlignment="Left" Height="410" VerticalAlignment="Top" Width="684" Margin="0,20,0,-45.2">
                     <TabItem x:Name="item2Tab" Header="TabItem" Height="20" Width="60" Visibility="Visible">
                         <Grid Background = "White" Height="auto" Width="auto">
                             <TextBox HorizontalAlignment = "Left" Height="382" Margin="440,0,0,0" TextWrapping="Wrap" Text="InfoTxt" VerticalAlignment="Top" Width="238" Background="#FFC0FFFF" />
@@ -35,8 +35,8 @@
                     </TabItem>
                 </TabControl>
             </Grid>
-            <Grid x:Name="shopGrid" Margin="0,20,0,-20">
-                <TabControl  HorizontalAlignment="Left" Height="410" VerticalAlignment="Top" Width="684" Visibility="Hidden">
+            <Grid x:Name="shopGrid" Margin="0,20,0,0" Visibility="Hidden">
+                <TabControl  HorizontalAlignment="Left" Height="365" VerticalAlignment="Top" Width="684"  Margin="0,0,0,-0.2">
                     <TabItem x:Name="item3Tab" Header="TabItem" Height="20" Width="60" Visibility="Visible">
                         <Grid Background = "White" Height="auto" Width="auto">
                             <TextBox HorizontalAlignment = "Left" Height="382" Margin="440,0,0,0" TextWrapping="Wrap" Text="InfoTxt" VerticalAlignment="Top" Width="238" Background="#FFC0FFFF" />

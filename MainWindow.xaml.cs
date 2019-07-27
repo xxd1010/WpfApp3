@@ -11,7 +11,8 @@ namespace WpfApp3
     {
         public MainWindow()
         {
-
+            Create.ControlsHide controlsHide = new Create.ControlsHide();
+            controlsHide.Show();
             InitializeComponent();
         }
 
@@ -19,6 +20,7 @@ namespace WpfApp3
         private void Cropbutton_Click(object sender, RoutedEventArgs e)
         {
 
+            
 
         }
 
