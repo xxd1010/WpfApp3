@@ -1,6 +1,7 @@
 ﻿using System.Threading;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace WpfApp3
 {
@@ -13,10 +14,14 @@ namespace WpfApp3
         {
             //Create.ControlsHide controlsHide = new Create.ControlsHide();
             //controlsHide.Show();
+
             MainWindowColorChange();
             InitializeComponent();
         }
-
+        public string buttonContentLand = "土地";
+        public string buttonContentFish = "鱼塘";
+        public string buttonContentShop = "商店";
+        
 
         public void MainWindowColorChange()
         {
@@ -26,12 +31,12 @@ namespace WpfApp3
 
             //MainWindow所有Grid的颜色
             
+            //cropbutton.Background = ;
 
 
-
-            cropGrid.Background = cropbutton.Background;
-            fishGrid.Background = fishbutton.Background;
-            shopGrid.Background = shopbutton.Background;
+            //crop_fish_shop_Grid.Background = cropbutton.Background;
+            //crop_fish_shop_Grid.Background = fishbutton.Background;
+            //crop_fish_shop_Grid.Background = shopbutton.Background;
 
 
 
@@ -40,42 +45,34 @@ namespace WpfApp3
         }
 
 
-        private void Cropbutton_Click(object sender, RoutedEventArgs e)
+        private void Landbutton_Click(object sender, RoutedEventArgs e)
         {
-            cropGrid.Visibility = Visibility.Visible;
-            fishGrid.Visibility = Visibility.Collapsed;
-            shopGrid.Visibility = Visibility.Collapsed;
 
+            item1Tab.Header = buttonContentLand;
+            //crop_fish_shop_Grid.Visibility = Visibility.Visible;
+            //crop_fish_shop_Grid.Visibility = Visibility.Collapsed;
+            //crop_fish_shop_Grid.Visibility = Visibility.Collapsed;
+            crop_fish_shop_TXT.Text = buttonContentLand;
         }
 
         private void Fishbutton_Click(object sender, RoutedEventArgs e)
         {
-            cropGrid.Visibility = Visibility.Collapsed;
-            fishGrid.Visibility = Visibility.Visible;
-            shopGrid.Visibility = Visibility.Collapsed;
+
+            item1Tab.Header = buttonContentFish;
+            //crop_fish_shop_Grid.Visibility = Visibility.Collapsed;
+            //crop_fish_shop_Grid.Visibility = Visibility.Visible;
+            //crop_fish_shop_Grid.Visibility = Visibility.Collapsed;
+            crop_fish_shop_TXT.Text = buttonContentFish;
         }
 
         private void Shopbutton_Click(object sender, RoutedEventArgs e)
         {
-            cropGrid.Visibility = Visibility.Collapsed;
-            fishGrid.Visibility = Visibility.Collapsed;
-            shopGrid.Visibility = Visibility.Visible;
 
-        }
-
-        private void Croptxt_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-        {
-            croptxt.Text = "THIS IS CROP TXT AREA";
-        }
-
-        private void Fishtxt_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-        {
-            fishtxt.Text = "THIS IS FISH";
-        }
-
-        private void Shoptxt_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-        {
-            shoptxt.Text = "this is SHOP";
+            item1Tab.Header = buttonContentShop;
+            //crop_fish_shop_Grid.Visibility = Visibility.Collapsed;
+            //crop_fish_shop_Grid.Visibility = Visibility.Collapsed;
+            //crop_fish_shop_Grid.Visibility = Visibility.Visible;
+            crop_fish_shop_TXT.Text = buttonContentShop;
         }
     }
 }
