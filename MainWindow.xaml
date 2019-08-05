@@ -13,8 +13,17 @@
             <ColumnDefinition Width="100"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="landbutton" Content="土地" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Click="Landbutton_Click" Background="Green" BorderBrush="{x:Null}" Margin="0,70,0,0" />
-        <Button x:Name="fishbutton" Content="鱼塘" HorizontalAlignment="Left" Margin="0,105,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="Fishbutton_Click" Background="BlueViolet" BorderBrush="{x:Null}" />
+        <Button x:Name="landbutton" Content="土地" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Landbutton_Click" Background="Lime" BorderBrush="{x:Null}" Margin="0,70,0,0" Height="30" Width="100"  />
+        <Button x:Name="fishbutton" Content="鱼塘" HorizontalAlignment="Left" Margin="0,105,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="Fishbutton_Click" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Background="BlueViolet" Padding="1" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-2"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
         <Button x:Name="shopbutton" Content="商店" HorizontalAlignment="Left" Margin="0,140,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="Shopbutton_Click" Background="Red" BorderBrush="{x:Null}" />
         <Grid Grid.Column="1" HorizontalAlignment="Left" Width="684" Height="385" VerticalAlignment="Top">
             <Grid Name="crop_fish_shop_Grid" Visibility="Visible">
@@ -22,8 +31,20 @@
                     <TabItem Name="item1Tab" Header="" Height="20" Width="60">
                         <Grid Background = "Gray" Height="auto" Width="auto" >
                             <TextBox Name="crop_fish_shop_TXT" HorizontalAlignment = "Left" Height="278" Margin="430,5,0,5" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" Background="#FFC0FFFF" Text="" />
+
                         </Grid>
                     </TabItem>
+                    <TabItem Name="item2Tab" Header="" Height="20" Width="60">
+                        <Grid>
+                            
+                        </Grid>
+                    </TabItem>
+                    <TabItem Name="item3Tab" Header="" Height="20" Width="60">
+                        <Grid>
+                            
+                        </Grid>
+                    </TabItem>
+                     
                 </TabControl>
             </Grid>
             <!--
@@ -47,7 +68,7 @@
                 </TabControl>
             </Grid>
             -->
-            
+
         </Grid>
 
 
